@@ -10,9 +10,10 @@
 		18D04D052B681C4C002F50BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D04D042B681C4C002F50BD /* AppDelegate.swift */; };
 		18D04D072B681C4C002F50BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D04D062B681C4C002F50BD /* SceneDelegate.swift */; };
 		18D04D092B681C4C002F50BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D04D082B681C4C002F50BD /* ViewController.swift */; };
-		18D04D0C2B681C4C002F50BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D04D0A2B681C4C002F50BD /* Main.storyboard */; };
 		18D04D0E2B681C4E002F50BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D04D0D2B681C4E002F50BD /* Assets.xcassets */; };
 		18D04D112B681C4E002F50BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D04D0F2B681C4E002F50BD /* LaunchScreen.storyboard */; };
+		18D04D1B2B681ECF002F50BD /* SoundsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D04D1A2B681ECF002F50BD /* SoundsCell.swift */; };
+		18D04D1D2B682287002F50BD /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D04D1C2B682287002F50BD /* Header.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		18D04D042B681C4C002F50BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18D04D062B681C4C002F50BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		18D04D082B681C4C002F50BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18D04D0B2B681C4C002F50BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18D04D0D2B681C4E002F50BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18D04D102B681C4E002F50BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18D04D122B681C4E002F50BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D04D1A2B681ECF002F50BD /* SoundsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsCell.swift; sourceTree = "<group>"; };
+		18D04D1C2B682287002F50BD /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				18D04D042B681C4C002F50BD /* AppDelegate.swift */,
 				18D04D062B681C4C002F50BD /* SceneDelegate.swift */,
 				18D04D082B681C4C002F50BD /* ViewController.swift */,
-				18D04D0A2B681C4C002F50BD /* Main.storyboard */,
+				18D04D1C2B682287002F50BD /* Header.swift */,
 				18D04D0D2B681C4E002F50BD /* Assets.xcassets */,
 				18D04D0F2B681C4E002F50BD /* LaunchScreen.storyboard */,
 				18D04D122B681C4E002F50BD /* Info.plist */,
+				18D04D1A2B681ECF002F50BD /* SoundsCell.swift */,
 			);
 			path = SoundEffectLibrary;
 			sourceTree = "<group>";
@@ -127,7 +130,6 @@
 			files = (
 				18D04D112B681C4E002F50BD /* LaunchScreen.storyboard in Resources */,
 				18D04D0E2B681C4E002F50BD /* Assets.xcassets in Resources */,
-				18D04D0C2B681C4C002F50BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +140,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D04D1D2B682287002F50BD /* Header.swift in Sources */,
 				18D04D092B681C4C002F50BD /* ViewController.swift in Sources */,
 				18D04D052B681C4C002F50BD /* AppDelegate.swift in Sources */,
 				18D04D072B681C4C002F50BD /* SceneDelegate.swift in Sources */,
+				18D04D1B2B681ECF002F50BD /* SoundsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18D04D0A2B681C4C002F50BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18D04D0B2B681C4C002F50BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		18D04D0F2B681C4E002F50BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +293,6 @@
 				INFOPLIST_FILE = SoundEffectLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +320,6 @@
 				INFOPLIST_FILE = SoundEffectLibrary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
